@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA006DA61DB92EAC00E5A233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */; };
+		FA006DA81DB92EAC00E5A233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA006DA71DB92EAC00E5A233 /* ViewController.swift */; };
+		FA006DAB1DB92EAC00E5A233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DA91DB92EAC00E5A233 /* Main.storyboard */; };
+		FA006DAE1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */; };
+		FA006DB01DB92EAC00E5A233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */; };
+		FA006DB31DB92EAC00E5A233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DB11DB92EAC00E5A233 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA006DA21DB92EAC00E5A233 /* MortgageCalculatorProfessional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalculatorProfessional.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA006DA71DB92EAC00E5A233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA006DAA1DB92EAC00E5A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA006DAD1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MortgageCalculatorProfessional.xcdatamodel; sourceTree = "<group>"; };
+		FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA006DB21DB92EAC00E5A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA006DB41DB92EAC00E5A233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA006D9F1DB92EAC00E5A233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA006D991DB92EAC00E5A233 = {
+			isa = PBXGroup;
+			children = (
+				FA006DA41DB92EAC00E5A233 /* MortgageCalculatorProfessional */,
+				FA006DA31DB92EAC00E5A233 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA006DA31DB92EAC00E5A233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA006DA21DB92EAC00E5A233 /* MortgageCalculatorProfessional.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA006DA41DB92EAC00E5A233 /* MortgageCalculatorProfessional */ = {
+			isa = PBXGroup;
+			children = (
+				FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */,
+				FA006DA71DB92EAC00E5A233 /* ViewController.swift */,
+				FA006DA91DB92EAC00E5A233 /* Main.storyboard */,
+				FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */,
+				FA006DB11DB92EAC00E5A233 /* LaunchScreen.storyboard */,
+				FA006DB41DB92EAC00E5A233 /* Info.plist */,
+				FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */,
+			);
+			path = MortgageCalculatorProfessional;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA006DA11DB92EAC00E5A233 /* MortgageCalculatorProfessional */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA006DB71DB92EAC00E5A233 /* Build configuration list for PBXNativeTarget "MortgageCalculatorProfessional" */;
+			buildPhases = (
+				FA006D9E1DB92EAC00E5A233 /* Sources */,
+				FA006D9F1DB92EAC00E5A233 /* Frameworks */,
+				FA006DA01DB92EAC00E5A233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MortgageCalculatorProfessional;
+			productName = MortgageCalculatorProfessional;
+			productReference = FA006DA21DB92EAC00E5A233 /* MortgageCalculatorProfessional.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA006D9A1DB92EAC00E5A233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FA006DA11DB92EAC00E5A233 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UAKESA57UE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA006D9D1DB92EAC00E5A233 /* Build configuration list for PBXProject "MortgageCalculatorProfessional" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA006D991DB92EAC00E5A233;
+			productRefGroup = FA006DA31DB92EAC00E5A233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA006DA11DB92EAC00E5A233 /* MortgageCalculatorProfessional */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA006DA01DB92EAC00E5A233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA006DB31DB92EAC00E5A233 /* LaunchScreen.storyboard in Resources */,
+				FA006DB01DB92EAC00E5A233 /* Assets.xcassets in Resources */,
+				FA006DAB1DB92EAC00E5A233 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA006D9E1DB92EAC00E5A233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA006DA81DB92EAC00E5A233 /* ViewController.swift in Sources */,
+				FA006DAE1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld in Sources */,
+				FA006DA61DB92EAC00E5A233 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA006DA91DB92EAC00E5A233 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA006DAA1DB92EAC00E5A233 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA006DB11DB92EAC00E5A233 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA006DB21DB92EAC00E5A233 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA006DB51DB92EAC00E5A233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA006DB61DB92EAC00E5A233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA006DB81DB92EAC00E5A233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UAKESA57UE;
+				INFOPLIST_FILE = MortgageCalculatorProfessional/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexyy.MortgageCalculatorProfessional;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA006DB91DB92EAC00E5A233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UAKESA57UE;
+				INFOPLIST_FILE = MortgageCalculatorProfessional/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexyy.MortgageCalculatorProfessional;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA006D9D1DB92EAC00E5A233 /* Build configuration list for PBXProject "MortgageCalculatorProfessional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA006DB51DB92EAC00E5A233 /* Debug */,
+				FA006DB61DB92EAC00E5A233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA006DB71DB92EAC00E5A233 /* Build configuration list for PBXNativeTarget "MortgageCalculatorProfessional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA006DB81DB92EAC00E5A233 /* Debug */,
+				FA006DB91DB92EAC00E5A233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA006DAD1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodel */,
+			);
+			currentVersion = FA006DAD1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodel */;
+			path = MortgageCalculatorProfessional.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA006D9A1DB92EAC00E5A233 /* Project object */;
+}
