@@ -12,8 +12,21 @@
 		FA006DAB1DB92EAC00E5A233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DA91DB92EAC00E5A233 /* Main.storyboard */; };
 		FA006DAE1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */; };
 		FA006DB01DB92EAC00E5A233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */; };
-		FA006DB31DB92EAC00E5A233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DB11DB92EAC00E5A233 /* LaunchScreen.storyboard */; };
+		FA006DCF1DBAAC7A00E5A233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DCD1DBAAC7A00E5A233 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA006DCC1DB9A02F00E5A233 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA006DA21DB92EAC00E5A233 /* MortgageCalculatorProfessional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalculatorProfessional.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,8 +35,8 @@
 		FA006DAA1DB92EAC00E5A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA006DAD1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MortgageCalculatorProfessional.xcdatamodel; sourceTree = "<group>"; };
 		FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA006DB21DB92EAC00E5A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA006DB41DB92EAC00E5A233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA006DCE1DBAAC7A00E5A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +72,8 @@
 				FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */,
 				FA006DA71DB92EAC00E5A233 /* ViewController.swift */,
 				FA006DA91DB92EAC00E5A233 /* Main.storyboard */,
+				FA006DCD1DBAAC7A00E5A233 /* LaunchScreen.storyboard */,
 				FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */,
-				FA006DB11DB92EAC00E5A233 /* LaunchScreen.storyboard */,
 				FA006DB41DB92EAC00E5A233 /* Info.plist */,
 				FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */,
 			);
@@ -77,6 +90,7 @@
 				FA006D9E1DB92EAC00E5A233 /* Sources */,
 				FA006D9F1DB92EAC00E5A233 /* Frameworks */,
 				FA006DA01DB92EAC00E5A233 /* Resources */,
+				FA006DCC1DB9A02F00E5A233 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,8 +113,8 @@
 				TargetAttributes = {
 					FA006DA11DB92EAC00E5A233 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UAKESA57UE;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = R39S7CJNE2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -127,7 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA006DB31DB92EAC00E5A233 /* LaunchScreen.storyboard in Resources */,
+				FA006DCF1DBAAC7A00E5A233 /* LaunchScreen.storyboard in Resources */,
 				FA006DB01DB92EAC00E5A233 /* Assets.xcassets in Resources */,
 				FA006DAB1DB92EAC00E5A233 /* Main.storyboard in Resources */,
 			);
@@ -157,10 +171,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FA006DB11DB92EAC00E5A233 /* LaunchScreen.storyboard */ = {
+		FA006DCD1DBAAC7A00E5A233 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA006DB21DB92EAC00E5A233 /* Base */,
+				FA006DCE1DBAAC7A00E5A233 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -264,26 +278,40 @@
 		FA006DB81DB92EAC00E5A233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UAKESA57UE;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R39S7CJNE2;
 				INFOPLIST_FILE = MortgageCalculatorProfessional/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexyy.MortgageCalculatorProfessional;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexyy.mortgagecalculatorprofessional;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c1c92ffc-b16c-408d-bf2d-ac3ce38202d4";
+				PROVISIONING_PROFILE_SPECIFIER = MCPDev;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FA006DB91DB92EAC00E5A233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UAKESA57UE;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = R39S7CJNE2;
 				INFOPLIST_FILE = MortgageCalculatorProfessional/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexyy.MortgageCalculatorProfessional;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexyy.mortgagecalculatorprofessional;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4794bde9-3c40-4d1c-b7f1-a04bd7d37a85";
+				PROVISIONING_PROFILE_SPECIFIER = MCPDis;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
