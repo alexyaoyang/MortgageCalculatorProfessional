@@ -291,7 +291,7 @@
 				PROVISIONING_PROFILE = "c1c92ffc-b16c-408d-bf2d-ac3ce38202d4";
 				PROVISIONING_PROFILE_SPECIFIER = MCPDev;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -311,7 +311,7 @@
 				PROVISIONING_PROFILE = "4794bde9-3c40-4d1c-b7f1-a04bd7d37a85";
 				PROVISIONING_PROFILE_SPECIFIER = MCPDis;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -334,6 +334,7 @@
 				FA006DB91DB92EAC00E5A233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
