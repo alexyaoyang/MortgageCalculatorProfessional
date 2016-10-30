@@ -70,14 +70,38 @@
 			isa = PBXGroup;
 			children = (
 				FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */,
-				FA006DA71DB92EAC00E5A233 /* ViewController.swift */,
-				FA006DA91DB92EAC00E5A233 /* Main.storyboard */,
-				FA006DCD1DBAAC7A00E5A233 /* LaunchScreen.storyboard */,
+				FA0327701DC5904900187043 /* UI */,
+				FA03276F1DC5900D00187043 /* Storyboards */,
 				FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */,
 				FA006DB41DB92EAC00E5A233 /* Info.plist */,
-				FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */,
+				FA0327721DC5912600187043 /* Model */,
 			);
 			path = MortgageCalculatorProfessional;
+			sourceTree = "<group>";
+		};
+		FA03276F1DC5900D00187043 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA006DA91DB92EAC00E5A233 /* Main.storyboard */,
+				FA006DCD1DBAAC7A00E5A233 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA0327701DC5904900187043 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA006DA71DB92EAC00E5A233 /* ViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FA0327721DC5912600187043 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
