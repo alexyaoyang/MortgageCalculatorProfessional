@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2DE165885BFCA87CD8BAAC3 /* Pods_MortgageCalculatorProfessional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16619B22ECD4485F974573B3 /* Pods_MortgageCalculatorProfessional.framework */; };
 		FA006DA61DB92EAC00E5A233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */; };
 		FA006DA81DB92EAC00E5A233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA006DA71DB92EAC00E5A233 /* ViewController.swift */; };
 		FA006DAB1DB92EAC00E5A233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DA91DB92EAC00E5A233 /* Main.storyboard */; };
 		FA006DAE1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA006DAC1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld */; };
 		FA006DB01DB92EAC00E5A233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */; };
 		FA006DCF1DBAAC7A00E5A233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA006DCD1DBAAC7A00E5A233 /* LaunchScreen.storyboard */; };
+		FA6A854E1DC7BF510031A2C3 /* ARPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A854D1DC7BF510031A2C3 /* ARPieChart.swift */; };
+		FA6A85521DCA87310031A2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA6A85511DCA87310031A2C3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16619B22ECD4485F974573B3 /* Pods_MortgageCalculatorProfessional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MortgageCalculatorProfessional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85D7178438063622497984E /* Pods-MortgageCalculatorProfessional.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculatorProfessional.release.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculatorProfessional/Pods-MortgageCalculatorProfessional.release.xcconfig"; sourceTree = "<group>"; };
+		CAFFAFF7F6B20E0C07CE6000 /* Pods-MortgageCalculatorProfessional.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MortgageCalculatorProfessional.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MortgageCalculatorProfessional/Pods-MortgageCalculatorProfessional.debug.xcconfig"; sourceTree = "<group>"; };
 		FA006DA21DB92EAC00E5A233 /* MortgageCalculatorProfessional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalculatorProfessional.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA006DA71DB92EAC00E5A233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,8 @@
 		FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA006DB41DB92EAC00E5A233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA006DCE1DBAAC7A00E5A233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA6A854D1DC7BF510031A2C3 /* ARPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPieChart.swift; sourceTree = "<group>"; };
+		FA6A85511DCA87310031A2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2DE165885BFCA87CD8BAAC3 /* Pods_MortgageCalculatorProfessional.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCDFE7E786FA781A9CFAF77A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAFFAFF7F6B20E0C07CE6000 /* Pods-MortgageCalculatorProfessional.debug.xcconfig */,
+				B85D7178438063622497984E /* Pods-MortgageCalculatorProfessional.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E46AAC42747CA86B040BCBF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16619B22ECD4485F974573B3 /* Pods_MortgageCalculatorProfessional.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA006D991DB92EAC00E5A233 = {
 			isa = PBXGroup;
 			children = (
 				FA006DA41DB92EAC00E5A233 /* MortgageCalculatorProfessional */,
 				FA006DA31DB92EAC00E5A233 /* Products */,
+				CCDFE7E786FA781A9CFAF77A /* Pods */,
+				E46AAC42747CA86B040BCBF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,11 +97,12 @@
 		FA006DA41DB92EAC00E5A233 /* MortgageCalculatorProfessional */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A854F1DC7C0A30031A2C3 /* ARPieChart */,
 				FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */,
 				FA0327701DC5904900187043 /* UI */,
 				FA03276F1DC5900D00187043 /* Storyboards */,
 				FA006DAF1DB92EAC00E5A233 /* Assets.xcassets */,
-				FA006DB41DB92EAC00E5A233 /* Info.plist */,
+				FA6A85501DC7C0C50031A2C3 /* Supporting Files */,
 				FA0327721DC5912600187043 /* Model */,
 			);
 			path = MortgageCalculatorProfessional;
@@ -104,6 +133,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		FA6A854F1DC7C0A30031A2C3 /* ARPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A854D1DC7BF510031A2C3 /* ARPieChart.swift */,
+			);
+			name = ARPieChart;
+			sourceTree = "<group>";
+		};
+		FA6A85501DC7C0C50031A2C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A85511DCA87310031A2C3 /* GoogleService-Info.plist */,
+				FA006DB41DB92EAC00E5A233 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,10 +157,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA006DB71DB92EAC00E5A233 /* Build configuration list for PBXNativeTarget "MortgageCalculatorProfessional" */;
 			buildPhases = (
+				92DBE9152698D9FB805133FE /* [CP] Check Pods Manifest.lock */,
 				FA006D9E1DB92EAC00E5A233 /* Sources */,
 				FA006D9F1DB92EAC00E5A233 /* Frameworks */,
 				FA006DA01DB92EAC00E5A233 /* Resources */,
 				FA006DCC1DB9A02F00E5A233 /* Embed Frameworks */,
+				B10130BE6093686378F4EB08 /* [CP] Embed Pods Frameworks */,
+				6B474BB13B17C4015B9AA733 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,12 +215,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA006DCF1DBAAC7A00E5A233 /* LaunchScreen.storyboard in Resources */,
+				FA6A85521DCA87310031A2C3 /* GoogleService-Info.plist in Resources */,
 				FA006DB01DB92EAC00E5A233 /* Assets.xcassets in Resources */,
 				FA006DAB1DB92EAC00E5A233 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B474BB13B17C4015B9AA733 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MortgageCalculatorProfessional/Pods-MortgageCalculatorProfessional-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92DBE9152698D9FB805133FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B10130BE6093686378F4EB08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MortgageCalculatorProfessional/Pods-MortgageCalculatorProfessional-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA006D9E1DB92EAC00E5A233 /* Sources */ = {
@@ -180,6 +278,7 @@
 			files = (
 				FA006DA81DB92EAC00E5A233 /* ViewController.swift in Sources */,
 				FA006DAE1DB92EAC00E5A233 /* MortgageCalculatorProfessional.xcdatamodeld in Sources */,
+				FA6A854E1DC7BF510031A2C3 /* ARPieChart.swift in Sources */,
 				FA006DA61DB92EAC00E5A233 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +402,8 @@
 		};
 		FA006DB81DB92EAC00E5A233 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFFAFF7F6B20E0C07CE6000 /* Pods-MortgageCalculatorProfessional.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -323,8 +422,8 @@
 		};
 		FA006DB91DB92EAC00E5A233 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85D7178438063622497984E /* Pods-MortgageCalculatorProfessional.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";

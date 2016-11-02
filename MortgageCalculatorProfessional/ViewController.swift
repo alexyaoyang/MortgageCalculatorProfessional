@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, ARPieChartDelegate, ARPieChartDataSource {
 
     @IBOutlet weak var propertyCost: UITextField!
     @IBOutlet weak var downPayment: UITextField!
@@ -24,8 +24,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var totalPayment: UILabel!
     var toPrint: String = ""
     
+    @IBOutlet weak var pieChart: ARPieChart!
+    @IBOutlet weak var selectionLabel: UILabel!
+    var dataItems: NSMutableArray = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pieChart.delegate = self
+        pieChart.dataSource = self
+        pieChart.showDescriptionText = true
+        
+        let maxRadius = min(pieChart.frame.width, pieChart.frame.height) / 2
+        pieChart.innerRadius = CGFloat(maxRadius*0.4)
+        pieChart.outerRadius = CGFloat(maxRadius*0.9)
+        pieChart.selectedPieOffset = CGFloat(maxRadius*0.2)
+        
+        selectionLabel.text = ""
+        selectionLabel.numberOfLines = 2
+        
         propertyCost.keyboardType = UIKeyboardType.decimalPad
         downPayment.keyboardType = UIKeyboardType.decimalPad
         loanDuration.keyboardType = UIKeyboardType.decimalPad
@@ -37,8 +54,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         otherFees.keyboardType = UIKeyboardType.decimalPad
         self.calculateMortgage(self)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        pieChart.reloadData()
+    }
+    
     @IBAction func calculateMortgage(_ sender: AnyObject) {
+        dataItems = []
         if let pc = Double(propertyCost.text!) {
             if let dp = Double(downPayment.text!) {
                 if let ld = Int(loanDuration.text!){
@@ -49,31 +76,42 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         let F = ir*C
                         let S = C-1
                         var result:Double = 0
+                        var temp:Double = 0
                         result = P * F/S
                         toPrint = ""
+                        
+                        dataItems.add(PieChartItem(value: CGFloat(result), color: UIColor.red, description: "Mortgage"))
+                        
                         if let mi = Double(mortgageInsurance.text!){
-                            result += mi*P/1200
-                            toPrint += "Mortgage Insurance: " + String(mi)
+                            temp = mi*P/1200
+                            result += temp
+                            toPrint += "Mortgage Insurance: " + String(mi) + "% = $" + String(format: "%.2f", temp)
+                            dataItems.add(PieChartItem(value: CGFloat(temp), color: UIColor.blue, description: "Mort. Ins."))
                         }
                         let tmp = dp+result*Double(ld)*12.0
                         if let pt = Double(propertyTax.text!) {
-                            result += pt*pc/1200
-                            toPrint += "\nProperty Tax: " + String(pt)
+                            temp = pt*pc/1200
+                            result += temp
+                            toPrint += "\nProperty Tax: " + String(pt) + "% = $" + String(format: "%.2f", temp)
+                            dataItems.add(PieChartItem(value: CGFloat(temp), color: UIColor.black, description: "Prop. Tax"))
                         }
                         if let hoi = Double(hoInsurance.text!){
                             result += hoi
-                            toPrint += "\nHome Insurance: " + String(hoi)
+                            toPrint += "\nHome Insurance: $" + String(hoi)
+                            dataItems.add(PieChartItem(value: CGFloat(hoi), color: UIColor.brown, description: "Home Ins."))
                         }
                         if let hoa = Double(hoaFees.text!){
                             result += hoa
-                            toPrint += "\nHOA Fees: " + String(hoa)
+                            toPrint += "\nHOA Fees: $" + String(hoa)
+                            dataItems.add(PieChartItem(value: CGFloat(hoa), color: UIColor.darkGray, description: "HOA Fees"))
                         }
                         if let other = Double(otherFees.text!){
                             result += other
-                            toPrint += "\nOther Fees: " + String(other)
+                            toPrint += "\nOther Fees: $" + String(other)
+                            dataItems.add(PieChartItem(value: CGFloat(other), color: UIColor.purple, description: "Other Fees"))
                         }
                         
-                        toPrint += "\n\nNeed to grind a few more numbers? Mortgage Calculator Professional+ is FREE: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1168139016&mt=8"
+                        toPrint += "\n\nNeed to grind a few more numbers? Mortgage Calculator App is FREE: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1168139016&mt=8"
                         
                         if result < 0 || ld <= 0 || inr <= 0 || P <= 0 || pc <= 0 || dp < 0 {
                             monthlyPayment.text = "Please enter valid values"
@@ -94,6 +132,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
+        pieChart.reloadData()
         UIApplication.shared.isIdleTimerDisabled = false
     }
     
@@ -115,5 +154,62 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /**
+     *  MARK: ARPieChartDelegate
+     */
+    func pieChart(_ pieChart: ARPieChart, itemSelectedAtIndex index: Int) {
+        let itemSelected: PieChartItem = dataItems[index] as! PieChartItem
+        selectionLabel.text = itemSelected.description! + "\n$\(String(format: "%.2f",itemSelected.value))"
+        selectionLabel.textColor = itemSelected.color
+    }
+    
+    func pieChart(_ pieChart: ARPieChart, itemDeselectedAtIndex index: Int) {
+        selectionLabel.text = ""
+        selectionLabel.textColor = UIColor.black
+    }
+    
+    
+    /**
+     *   MARK: ARPieChartDataSource
+     */
+    func numberOfSlicesInPieChart(_ pieChart: ARPieChart) -> Int {
+        return dataItems.count
+    }
+    
+    func pieChart(_ pieChart: ARPieChart, valueForSliceAtIndex index: Int) -> CGFloat {
+        let item: PieChartItem = dataItems[index] as! PieChartItem
+        return item.value
+    }
+    
+    func pieChart(_ pieChart: ARPieChart, colorForSliceAtIndex index: Int) -> UIColor {
+        let item: PieChartItem = dataItems[index] as! PieChartItem
+        return item.color
+    }
+    
+    func pieChart(_ pieChart: ARPieChart, descriptionForSliceAtIndex index: Int) -> String {
+        let item: PieChartItem = dataItems[index] as! PieChartItem
+        return item.description ?? ""
+    }
 }
 
+/**
+ *  MARK: Pie chart data item
+ */
+open class PieChartItem {
+    
+    /// Data value
+    open var value: CGFloat = 0.0
+    
+    /// Color displayed on chart
+    open var color: UIColor = UIColor.black
+    
+    /// Description text
+    open var description: String?
+    
+    public init(value: CGFloat, color: UIColor, description: String?) {
+        self.value = value
+        self.color = color
+        self.description = description
+    }
+}

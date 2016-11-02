@@ -22,21 +22,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iml-pL-XHk">
-                                <rect key="frame" x="0.0" y="20" width="375" height="516"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="650"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-fg-rxA">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-8h-DSs">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="737"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-8h-DSs">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                 <connections>
                                                     <action selector="hideKeyboard:" destination="W6A-r2-Kgj" eventType="touchUpInside" id="Vsv-rC-VrE"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="500000" borderStyle="roundedRect" placeholder="Enter Property Cost" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-us-Swx">
-                                                <rect key="frame" x="0.0" y="161" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="500000" borderStyle="roundedRect" placeholder="Enter Property Cost" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-us-Swx">
+                                                <rect key="frame" x="0.0" y="308" width="375" height="30"/>
                                                 <color key="backgroundColor" red="0.9889845597903153" green="0.99344763799862479" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -45,9 +43,8 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="DOt-Qb-XIz"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="100000" borderStyle="roundedRect" placeholder="Enter Down Payment" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-jN-VXc">
-                                                <rect key="frame" x="0.0" y="200" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="100000" borderStyle="roundedRect" placeholder="Enter Down Payment" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-jN-VXc">
+                                                <rect key="frame" x="0.0" y="347" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -55,9 +52,8 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="iXe-xe-N7U"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" placeholder="Enter Interest Rate" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ol9-Sr-KoS">
-                                                <rect key="frame" x="0.0" y="276" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" placeholder="Enter Interest Rate" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ol9-Sr-KoS">
+                                                <rect key="frame" x="0.0" y="423" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -65,9 +61,8 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="MaJ-eR-lOV"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.85" borderStyle="roundedRect" placeholder="Enter Mortgage Insurance" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q0L-n7-nCT">
-                                                <rect key="frame" x="0.0" y="314" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0.85" borderStyle="roundedRect" placeholder="Enter Mortgage Insurance" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q0L-n7-nCT">
+                                                <rect key="frame" x="0.0" y="461" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -75,9 +70,8 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="z4y-7U-t6h"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" borderStyle="roundedRect" placeholder="Enter Loan Duration" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-kC-PrD">
-                                                <rect key="frame" x="0.0" y="238" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="30" borderStyle="roundedRect" placeholder="Enter Loan Duration" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-kC-PrD">
+                                                <rect key="frame" x="0.0" y="385" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -85,44 +79,50 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="nXH-fk-H3Y"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Cost ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5s-iw-iDP">
-                                                <rect key="frame" x="4" y="166" width="261" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Cost ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5s-iw-iDP">
+                                                <rect key="frame" x="4" y="313" width="261" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="261" id="vF9-H8-kZw"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Down Payment ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHF-VN-vub">
-                                                <rect key="frame" x="4" y="205" width="271" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down Payment ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHF-VN-vub">
+                                                <rect key="frame" x="4" y="352" width="271" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loan Duration (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-O0-H8U">
-                                                <rect key="frame" x="4" y="243" width="272" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Duration (Years)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-O0-H8U">
+                                                <rect key="frame" x="4" y="390" width="272" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Xai-4v-65w"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-xs-2zD">
-                                                <rect key="frame" x="4" y="281" width="271" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-xs-2zD">
+                                                <rect key="frame" x="4" y="428" width="271" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="RVE-pl-2Yz"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mortgage Insurance (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4EV-Jo-wB3">
-                                                <rect key="frame" x="4" y="318" width="272" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mortgage Insurance (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4EV-Jo-wB3">
+                                                <rect key="frame" x="4" y="465" width="272" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="WJg-Ok-vAS"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="80" borderStyle="roundedRect" placeholder="Enter Homeowners Insurance" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-4u-DJe">
-                                                <rect key="frame" x="0.0" y="391" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="80" borderStyle="roundedRect" placeholder="Enter Homeowners Insurance" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-4u-DJe">
+                                                <rect key="frame" x="0.0" y="538" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -130,16 +130,17 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="s5S-pF-JU6"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Insurance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jf-wR-ta6">
-                                                <rect key="frame" x="4" y="395" width="272" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Insurance ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jf-wR-ta6">
+                                                <rect key="frame" x="4" y="542" width="272" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="kCJ-YK-3Ph"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter HOA Fees" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-qY-8xU">
-                                                <rect key="frame" x="0.0" y="429" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter HOA Fees" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-qY-8xU">
+                                                <rect key="frame" x="0.0" y="576" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -147,16 +148,14 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="H8P-il-icV"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOA Fees ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uk-ph-b0B">
-                                                <rect key="frame" x="4" y="433" width="271" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOA Fees ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uk-ph-b0B">
+                                                <rect key="frame" x="4" y="580" width="271" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter Other Fees" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7j-J3-JDp">
-                                                <rect key="frame" x="0.0" y="467" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter Other Fees" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7j-J3-JDp">
+                                                <rect key="frame" x="0.0" y="614" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -164,23 +163,14 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="p8w-Kw-GPQ"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other Fees ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9q-iW-ayj">
-                                                <rect key="frame" x="4" y="471" width="271" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Fees ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9q-iW-ayj">
+                                                <rect key="frame" x="4" y="620" width="271" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Mortgage Payments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAe-pG-HAF">
-                                                <rect key="frame" x="8" y="90" width="363" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1.25" borderStyle="roundedRect" placeholder="Enter Property Tax" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Uu-cq-JpT">
-                                                <rect key="frame" x="0.0" y="352" width="375" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1.25" borderStyle="roundedRect" placeholder="Enter Property Tax" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Uu-cq-JpT">
+                                                <rect key="frame" x="0.0" y="499" width="375" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
@@ -188,37 +178,24 @@
                                                     <action selector="calculateMortgage:" destination="W6A-r2-Kgj" eventType="editingChanged" id="FWN-0t-TkW"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Tax (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odp-Dm-D0N">
-                                                <rect key="frame" x="4" y="357" width="272" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Tax (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odp-Dm-D0N">
+                                                <rect key="frame" x="4" y="504" width="272" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Z17-fD-vZb"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loan Amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDX-RX-1iO">
-                                                <rect key="frame" x="8" y="61" width="363" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly Payment:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAt-yh-8tB">
-                                                <rect key="frame" x="8" y="119" width="363" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USl-GM-kfv">
+                                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USl-GM-kfv">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                 <textAttributes key="titleTextAttributes">
                                                     <color key="textColor" red="0.058530240689999999" green="0.69795488760000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </textAttributes>
                                                 <items>
-                                                    <navigationItem title="Mortgage Calculator Pro+" id="Td7-64-m0w">
+                                                    <navigationItem title="Mortgage Calculator" id="Td7-64-m0w">
                                                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="ZDP-Vd-6QU">
                                                             <color key="tintColor" red="0.058530240689999999" green="0.69795488760000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <connections>
@@ -228,26 +205,138 @@
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDX-RX-1iO">
+                                                <rect key="frame" x="6" y="265" width="363" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hd-sa-96f" customClass="ARPieChart" customModule="MortgageCalculatorProfessional" customModuleProvider="target">
+                                                <rect key="frame" x="6" y="45" width="367" height="203"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRg-ic-D13">
+                                                        <rect key="frame" x="1" y="82" width="363" height="39"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="mRg-ic-D13" firstAttribute="centerY" secondItem="2hd-sa-96f" secondAttribute="centerY" id="FDI-sK-f13"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mRg-ic-D13" secondAttribute="trailing" constant="3" id="UMN-4D-Uei"/>
+                                                    <constraint firstItem="mRg-ic-D13" firstAttribute="leading" secondItem="2hd-sa-96f" secondAttribute="leading" constant="1" id="ffj-x9-asw"/>
+                                                    <constraint firstItem="mRg-ic-D13" firstAttribute="top" secondItem="2hd-sa-96f" secondAttribute="top" constant="82" id="qVD-NL-T2v"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Mortgage Payments:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAe-pG-HAF">
+                                                <rect key="frame" x="6" y="284" width="363" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Payment:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAt-yh-8tB">
+                                                <rect key="frame" x="6" y="244" width="363" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="centerX" secondItem="MKb-xs-2zD" secondAttribute="centerX" id="0VV-zL-NWi"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="dnh-jN-VXc" secondAttribute="leading" id="2ra-6u-VQV"/>
+                                            <constraint firstItem="x7j-J3-JDp" firstAttribute="top" secondItem="6Uk-ph-b0B" secondAttribute="bottom" constant="13" id="3vv-28-NKb"/>
+                                            <constraint firstItem="eBa-us-Swx" firstAttribute="top" secondItem="lAe-pG-HAF" secondAttribute="bottom" constant="3" id="4Qs-zQ-qfZ"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="x7j-J3-JDp" secondAttribute="trailing" id="5hM-GQ-Hjh"/>
+                                            <constraint firstItem="eBa-us-Swx" firstAttribute="centerY" secondItem="N5s-iw-iDP" secondAttribute="centerY" id="5jK-nj-Cmx"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="x7j-J3-JDp" secondAttribute="leading" id="92X-cn-zWS"/>
+                                            <constraint firstItem="jDX-RX-1iO" firstAttribute="top" secondItem="hAt-yh-8tB" secondAttribute="bottom" id="9ck-7j-Buo"/>
+                                            <constraint firstAttribute="trailing" secondItem="2hd-sa-96f" secondAttribute="trailing" constant="2" id="AUg-qj-vB2"/>
+                                            <constraint firstItem="2hd-sa-96f" firstAttribute="top" secondItem="USl-GM-kfv" secondAttribute="bottom" constant="1" id="BHb-1h-pqV"/>
+                                            <constraint firstAttribute="bottom" secondItem="x7j-J3-JDp" secondAttribute="bottom" constant="76" id="Bgf-rj-vFn"/>
+                                            <constraint firstItem="4EV-Jo-wB3" firstAttribute="top" secondItem="Ol9-Sr-KoS" secondAttribute="bottom" constant="12" id="ByH-gW-pI0"/>
+                                            <constraint firstItem="x7j-J3-JDp" firstAttribute="centerY" secondItem="F9q-iW-ayj" secondAttribute="centerY" id="DZW-3P-P4S"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="top" secondItem="lAe-pG-HAF" secondAttribute="bottom" constant="8" symbolic="YES" id="Db3-Qw-utg"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="trailing" secondItem="2jf-wR-ta6" secondAttribute="trailing" id="E1U-iQ-5nM"/>
+                                            <constraint firstItem="jDX-RX-1iO" firstAttribute="top" secondItem="2hd-sa-96f" secondAttribute="bottom" constant="17" id="GPV-aU-6Ln"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="trailing" secondItem="odp-Dm-D0N" secondAttribute="trailing" id="HBY-VO-kaM"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="IWU-4u-DJe" secondAttribute="leading" id="HCt-2O-iuD"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="odp-Dm-D0N" secondAttribute="leading" id="IId-0P-nYe"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="centerX" secondItem="hAt-yh-8tB" secondAttribute="centerX" id="IQJ-sb-c0P"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="Ol9-Sr-KoS" secondAttribute="leading" id="IS2-Dw-fxw"/>
+                                            <constraint firstItem="2hd-sa-96f" firstAttribute="leading" secondItem="jDX-RX-1iO" secondAttribute="leading" id="Ix2-PG-1jV"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="centerX" secondItem="jDX-RX-1iO" secondAttribute="centerX" id="JMa-Ji-ShN"/>
+                                            <constraint firstItem="2hd-sa-96f" firstAttribute="leading" secondItem="vd6-fg-rxA" secondAttribute="leading" constant="6" id="KNH-6b-zh0"/>
+                                            <constraint firstItem="IWU-4u-DJe" firstAttribute="top" secondItem="odp-Dm-D0N" secondAttribute="bottom" constant="13" id="KlL-Tp-JUx"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="dnh-jN-VXc" secondAttribute="trailing" id="LOt-bu-r8n"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="F2T-qY-8xU" secondAttribute="leading" id="LW2-2Z-nvN"/>
+                                            <constraint firstItem="6Uk-ph-b0B" firstAttribute="centerY" secondItem="F2T-qY-8xU" secondAttribute="centerY" id="LsX-lK-Iwh"/>
+                                            <constraint firstItem="dnh-jN-VXc" firstAttribute="top" secondItem="eBa-us-Swx" secondAttribute="bottom" constant="9" id="NFs-IM-Iie"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="4EV-Jo-wB3" secondAttribute="leading" id="NXX-mH-skD"/>
+                                            <constraint firstItem="eBa-us-Swx" firstAttribute="top" secondItem="vd6-fg-rxA" secondAttribute="top" constant="308" id="NdV-1j-y2C"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="IWU-4u-DJe" secondAttribute="trailing" id="OJa-K1-wkE"/>
+                                            <constraint firstItem="odp-Dm-D0N" firstAttribute="centerY" secondItem="1Uu-cq-JpT" secondAttribute="centerY" id="Otv-21-tZ0"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="nj7-kC-PrD" secondAttribute="trailing" id="PyC-ya-0My"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="F2T-qY-8xU" secondAttribute="trailing" id="Qpt-hL-iux"/>
+                                            <constraint firstAttribute="trailing" secondItem="pt1-O0-H8U" secondAttribute="trailing" constant="99" id="R1j-e2-A2h"/>
+                                            <constraint firstItem="2hd-sa-96f" firstAttribute="top" secondItem="vd6-fg-rxA" secondAttribute="top" constant="45" id="RSS-53-vGW"/>
+                                            <constraint firstItem="Ol9-Sr-KoS" firstAttribute="top" secondItem="pt1-O0-H8U" secondAttribute="bottom" constant="12" id="SJb-OW-wux"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="centerX" secondItem="6Uk-ph-b0B" secondAttribute="centerX" id="SrP-jV-i3G"/>
+                                            <constraint firstItem="2jf-wR-ta6" firstAttribute="centerY" secondItem="IWU-4u-DJe" secondAttribute="centerY" id="T7P-qK-Y6h"/>
+                                            <constraint firstItem="4EV-Jo-wB3" firstAttribute="centerY" secondItem="Q0L-n7-nCT" secondAttribute="centerY" id="UbB-Nh-8Qs"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="trailing" secondItem="4EV-Jo-wB3" secondAttribute="trailing" id="UfW-5i-SpF"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="qXa-8h-DSs" secondAttribute="leading" id="X84-sP-DIj"/>
+                                            <constraint firstItem="2hd-sa-96f" firstAttribute="leading" secondItem="lAe-pG-HAF" secondAttribute="leading" id="YDD-av-pDk"/>
+                                            <constraint firstAttribute="bottom" secondItem="2hd-sa-96f" secondAttribute="bottom" constant="472" id="bAn-0e-T1M"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="centerX" secondItem="RHF-VN-vub" secondAttribute="centerX" id="cVG-aa-8f1"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="RHF-VN-vub" secondAttribute="leading" id="cn6-PO-VgZ"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="1Uu-cq-JpT" secondAttribute="trailing" id="e6a-q5-xSg"/>
+                                            <constraint firstItem="1Uu-cq-JpT" firstAttribute="top" secondItem="4EV-Jo-wB3" secondAttribute="bottom" constant="13" id="e8l-pD-65P"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="Q0L-n7-nCT" secondAttribute="leading" id="e8m-xE-H2F"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="eBa-us-Swx" secondAttribute="leading" id="ecj-t7-HpU"/>
+                                            <constraint firstItem="RHF-VN-vub" firstAttribute="top" secondItem="eBa-us-Swx" secondAttribute="bottom" constant="14" id="eu5-hO-JjX"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="eBa-us-Swx" secondAttribute="trailing" id="fZK-EX-sOo"/>
+                                            <constraint firstItem="RHF-VN-vub" firstAttribute="centerY" secondItem="dnh-jN-VXc" secondAttribute="centerY" id="fco-FR-efp"/>
+                                            <constraint firstItem="2hd-sa-96f" firstAttribute="leading" secondItem="hAt-yh-8tB" secondAttribute="leading" id="gCe-EK-EaL"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="vd6-fg-rxA" secondAttribute="leading" constant="4" id="iVT-zA-Zfe"/>
+                                            <constraint firstItem="x7j-J3-JDp" firstAttribute="top" secondItem="F2T-qY-8xU" secondAttribute="bottom" constant="8" symbolic="YES" id="ibn-wW-rGH"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="1Uu-cq-JpT" secondAttribute="leading" id="jMn-61-XXX"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="6Uk-ph-b0B" secondAttribute="leading" id="jfO-zB-SPm"/>
+                                            <constraint firstItem="MKb-xs-2zD" firstAttribute="centerY" secondItem="Ol9-Sr-KoS" secondAttribute="centerY" id="kGC-GR-feq"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="MKb-xs-2zD" secondAttribute="leading" id="n0N-jx-hVN"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="centerY" secondItem="nj7-kC-PrD" secondAttribute="centerY" id="nnq-A0-ahg"/>
+                                            <constraint firstAttribute="trailing" secondItem="USl-GM-kfv" secondAttribute="trailing" id="o4a-vD-VtC"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="top" secondItem="qXa-8h-DSs" secondAttribute="top" id="prx-ke-j6v"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="centerX" secondItem="lAe-pG-HAF" secondAttribute="centerX" id="q2P-HL-UHz"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="2jf-wR-ta6" secondAttribute="leading" id="qq4-pt-EEl"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="nj7-kC-PrD" secondAttribute="leading" id="rPp-dm-52k"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="leading" secondItem="vd6-fg-rxA" secondAttribute="leading" id="riy-eE-Kp2"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="pt1-O0-H8U" secondAttribute="leading" id="rt3-HD-73N"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="top" secondItem="dnh-jN-VXc" secondAttribute="bottom" constant="13" id="sye-79-uMO"/>
+                                            <constraint firstItem="N5s-iw-iDP" firstAttribute="leading" secondItem="F9q-iW-ayj" secondAttribute="leading" id="vYq-Os-E3y"/>
+                                            <constraint firstItem="pt1-O0-H8U" firstAttribute="centerX" secondItem="F9q-iW-ayj" secondAttribute="centerX" id="vxt-mD-WTU"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="Ol9-Sr-KoS" secondAttribute="trailing" id="wqa-PM-Jsl"/>
                                             <constraint firstAttribute="height" constant="720" id="z88-zK-SJk"/>
+                                            <constraint firstItem="USl-GM-kfv" firstAttribute="trailing" secondItem="Q0L-n7-nCT" secondAttribute="trailing" id="zx2-wq-YjY"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="vd6-fg-rxA" secondAttribute="trailing" id="33R-C1-g2M"/>
                                     <constraint firstItem="vd6-fg-rxA" firstAttribute="leading" secondItem="Iml-pL-XHk" secondAttribute="leading" id="VxR-2f-fXw"/>
-                                    <constraint firstAttribute="bottom" secondItem="vd6-fg-rxA" secondAttribute="bottom" constant="-204" id="diN-KI-Vd2"/>
+                                    <constraint firstAttribute="bottom" secondItem="vd6-fg-rxA" secondAttribute="bottom" constant="-70" id="diN-KI-Vd2"/>
                                     <constraint firstItem="vd6-fg-rxA" firstAttribute="top" secondItem="Iml-pL-XHk" secondAttribute="top" id="grP-48-pk7"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qXa-8h-DSs" firstAttribute="width" secondItem="hfD-Xy-1Xc" secondAttribute="width" id="4Sv-sm-DHo"/>
                             <constraint firstItem="Iml-pL-XHk" firstAttribute="top" secondItem="hfD-Xy-1Xc" secondAttribute="top" constant="20" id="FJC-ic-QGA"/>
-                            <constraint firstItem="4yQ-js-STl" firstAttribute="top" secondItem="Iml-pL-XHk" secondAttribute="bottom" constant="131" id="M9A-3e-NMp"/>
+                            <constraint firstItem="4yQ-js-STl" firstAttribute="top" secondItem="Iml-pL-XHk" secondAttribute="bottom" constant="-3" id="M9A-3e-NMp"/>
                             <constraint firstItem="vd6-fg-rxA" firstAttribute="width" secondItem="hfD-Xy-1Xc" secondAttribute="width" id="XBN-6h-h2X"/>
+                            <constraint firstItem="qXa-8h-DSs" firstAttribute="height" secondItem="hfD-Xy-1Xc" secondAttribute="height" id="iIP-cA-wRl"/>
                             <constraint firstAttribute="trailing" secondItem="Iml-pL-XHk" secondAttribute="trailing" id="umj-7i-3d4"/>
                             <constraint firstItem="Iml-pL-XHk" firstAttribute="leading" secondItem="hfD-Xy-1Xc" secondAttribute="leading" id="ws1-3c-2iE"/>
                         </constraints>
@@ -262,8 +351,10 @@
                         <outlet property="monthlyPayment" destination="hAt-yh-8tB" id="Tjn-Ka-Jcm"/>
                         <outlet property="mortgageInsurance" destination="Q0L-n7-nCT" id="uae-7O-let"/>
                         <outlet property="otherFees" destination="x7j-J3-JDp" id="Tv9-GP-gpM"/>
+                        <outlet property="pieChart" destination="2hd-sa-96f" id="PvQ-Fe-0SO"/>
                         <outlet property="propertyCost" destination="eBa-us-Swx" id="hon-pg-GJU"/>
                         <outlet property="propertyTax" destination="1Uu-cq-JpT" id="pbw-wG-UyF"/>
+                        <outlet property="selectionLabel" destination="mRg-ic-D13" id="YEQ-WT-TcE"/>
                         <outlet property="totalPayment" destination="lAe-pG-HAF" id="aaj-s2-VPM"/>
                     </connections>
                 </viewController>
