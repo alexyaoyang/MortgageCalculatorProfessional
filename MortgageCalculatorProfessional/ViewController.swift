@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, ARPieChartDelegate, ARPieChartDataSource {
 
@@ -134,6 +135,17 @@ class ViewController: UIViewController, ARPieChartDelegate, ARPieChartDataSource
         }
         pieChart.reloadData()
         UIApplication.shared.isIdleTimerDisabled = false
+    }
+    
+    @IBAction func signOut(_ sender: AnyObject) {
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+            AppState.sharedInstance.signedIn = false
+            dismiss(animated: true, completion: nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: \(signOutError.localizedDescription)")
+        }
     }
     
     @IBAction func hideKeyboard(_ sender: UIButton) {
