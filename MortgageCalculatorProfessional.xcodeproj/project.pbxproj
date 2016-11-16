@@ -54,7 +54,6 @@
 		FA723ADA1DCA9FC10077D9EA /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
 		FA723ADC1DCA9FFC0077D9EA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FAC7DB771DD0A04D00FB8D69 /* MortgageCalculatorProfessional.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MortgageCalculatorProfessional.entitlements; sourceTree = "<group>"; };
-		FAC7DB7D1DD0C98C00FB8D69 /* MortgageCalculatorProfessional-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MortgageCalculatorProfessional-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +106,6 @@
 		FA006DA41DB92EAC00E5A233 /* MortgageCalculatorProfessional */ = {
 			isa = PBXGroup;
 			children = (
-				FAC7DB7D1DD0C98C00FB8D69 /* MortgageCalculatorProfessional-Bridging-Header.h */,
 				FAC7DB771DD0A04D00FB8D69 /* MortgageCalculatorProfessional.entitlements */,
 				FA6A854F1DC7C0A30031A2C3 /* ARPieChart */,
 				FA006DA51DB92EAC00E5A233 /* AppDelegate.swift */,
@@ -442,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c1c92ffc-b16c-408d-bf2d-ac3ce38202d4";
 				PROVISIONING_PROFILE_SPECIFIER = MCPDev;
-				SWIFT_OBJC_BRIDGING_HEADER = "MortgageCalculatorProfessional-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,7 +463,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4794bde9-3c40-4d1c-b7f1-a04bd7d37a85";
 				PROVISIONING_PROFILE_SPECIFIER = MCPDis;
-				SWIFT_OBJC_BRIDGING_HEADER = "MortgageCalculatorProfessional-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 @objc(SignInViewController)
-class SignInViewController: UIViewController, GIDSignInUIDelegate {
+class SignInViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -31,6 +31,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
             }
             self.signedIn(user!)
         }
+        emailField.text = ""
+        passwordField.text = ""
     }
     @IBAction func didTapSignUp(_ sender: AnyObject) {
         guard let email = emailField.text, let password = passwordField.text else { return }
